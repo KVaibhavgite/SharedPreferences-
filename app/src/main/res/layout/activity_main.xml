@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--EditText to take the data from the user and save the data in SharedPreferences-->
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Shared Preferences Demo"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="48dp"
+        android:hint="Enter your Name"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your Age"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editname" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Enter your Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editage" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="348dp"
+        android:text="Shared Preferences Demo 01"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editname1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your Name"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1" />
+
+    <EditText
+        android:id="@+id/editage2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editname1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:hint="Enter your Age"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editname1" />
+
+    <EditText
+        android:id="@+id/editemail3"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editage2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:hint="Enter your Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editage2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editemail3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editemail3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editemail3"
+        app:layout_constraintVertical_bias="0.442" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
